@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 //Connect to MongoDB
-mongoose.connect('mongodb+srv://'+process.env.NAME+':'+process.env.PASSWORD+'@cluster0.2ix4omb.mongodb.net/Courses_Selling_App');
+mongoose.connect(process.env.URL);
 
 //Define Schemas
 const AdminSchema = new mongoose.Schema({
